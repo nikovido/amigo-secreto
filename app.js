@@ -32,7 +32,7 @@ function sortearAmigo(){
 
 	if (listaAmigos.length > 0){
 		lista.innerHTML = ''; // limpiamos primero la lista de amigos sorteados
-		agregarAmigoListaHTML(lista, amigoAleatorio); // agregamos al amigo a la lista HTML de resultado
+		agregarAmigoListaHTML(lista, 'El amigo secreto es: ' + amigoAleatorio); // agregamos al amigo a la lista HTML de resultado
 		console.log("Amigo sorteado: "+ amigoAleatorio);
 		} else {
 			alert("Debe agregar al menos un amigo para realizar el sorteo.");
