@@ -44,15 +44,9 @@ function agregarAmigoListaHTML (lista, amigo) {
 	const listaSeleccionada = lista;
 	const nuevoAmigo = document.createElement('li'); // creamoss en el nuevo item
 	nuevoAmigo.textContent = amigo; // Asignamos al nuevo item el nombre del amigo
-	lista.appendChild(nuevoAmigo); // agregamos a la lista en el HTML el nombre del amigo
+	listaSeleccionada.appendChild(nuevoAmigo); // agregamos a la lista en el HTML el nombre del amigo
 }
 
-// función para asignar textos a elementos
-function asignarTextoElemento(elemento, texto) {
-    let elementoHTML = document.querySelector(elemento);
-    elementoHTML.innerHTML = texto;
-    return;
-}
 // función para limpiar el input amigo
 function limpiarInput(){
 	document.getElementById('amigo').value = '';
